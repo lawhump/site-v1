@@ -1,0 +1,278 @@
+@import 'jeet/index';
+@import 'partials/vars';
+@import 'partials/base';
+@import 'partials/landing';
+
+
+section.nutshell {
+    overflow-x: hidden;
+    text-align: center;
+    color: $color-stone;
+    padding: 1.4*$padding-lg 0;
+    line-height: $line-height;
+    
+    h3 {
+        font-size: $font-size-lg;    
+    }
+
+    h4 {
+        font-size: $font-size-sm;
+    }
+    
+    p {
+        margin: 0 auto;
+        width: $width-wide;
+        max-width: 800px;
+        font-size: $font-size-sm;    
+    }
+    
+    .personality {
+        margin-bottom: 40px;
+    }
+
+    div {
+        margin: 0 auto;
+        width: 40%;    
+    }
+
+    .platforms {
+        @include cf();
+        @include center(1000px);
+        padding: 40px 0;
+        
+        color: #111;
+    }
+
+    .container {
+        @include col(1/4, $cycle: 4);
+
+        text-align: center;
+
+        i {
+            text-shadow: none;
+            font-size: 4rem;
+        }
+    }
+
+    .tad-smaller { font-size: 1em; }
+    .techs { max-width: 440px; }
+
+    @media only screen and (max-width: 500px) {
+        .platforms { display: none; }
+        .container {
+            @include col(1/2, $uncycle: 4, $cycle: 2);
+
+            margin-bottom: 60px;
+        }
+    }
+
+    .additional {
+        margin-top: 20px;
+    }
+}
+
+div.work-prelude {
+    width: 100%;
+    padding: $padding-xl 0;
+    background-color: $color-medium;
+    text-align: center;
+
+    font-size: $font-size-md;
+    
+    h4 {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: $letter-spacing;
+    }
+
+    .darker { border-top: 20px solid $color-medium_darker; }
+}
+
+@media only screen and (max-width: 800px) {
+    div.work-prelude { padding: $padding-lg 0; }
+}
+
+section.work {
+    width: 100vw;
+    text-align: center;
+
+    h5 {
+        font-size: 3rem;
+    }
+
+    .grid {
+        @include cf();
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            @include span(1/3);
+
+            @media only screen and (max-width: 1200px) {
+                @include span(1/2);
+            }
+
+            @media only screen and (max-width: 800px) {
+                @include stack();
+
+                &:nth-of-type(3) ~ li {
+                    display: none;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+div.cta {
+    width: 100vw;
+    height: auto;
+    padding: 1.2*$padding-lg 0;
+    background-color: $color-stone;
+    text-align: center;
+    font-size: $font-size-lg;
+    
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        color: $color-light;
+    }
+}
+
+section.contact {
+    width: 100vw;
+    height: auto;
+    padding: $padding-xl 0;
+    text-align: center;
+        
+    .container {
+        min-width: $width-std;
+        width: 90%;
+        margin: 0 auto;
+        line-height: $line-height;
+        
+        h3 {
+            font-size: $font-size-lg;
+        }
+        
+        h4 {
+            font-size: 1.2*$font-size-sm;  
+            padding-bottom: 10px;  
+        }
+        
+        > div {
+            padding: $padding-sm;
+        }
+
+        p {
+            margin: 0 auto;
+            max-width: 380px;
+        }
+    }
+
+    > a {
+        font-size: $font-size-md;
+        color: $color-medium;
+        border-bottom: 5px solid $color-medium;
+    }
+
+    .links {
+        margin-top: $padding-lg;
+        @include cf();
+        @include center(600px);
+    }
+
+    .link {
+        @include col(1/5, $cycle: 5);
+        color: $color-stone;
+    }
+}
+
+section.closing {
+    position: relative;
+    height: 200px;
+    text-align: center;
+    background: url(/img/rocks-and-water.jpg) no-repeat top center / 1200px 300px; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+
+    h5, h6 {
+        color: $color-white;
+        font-weight: 300;
+    }
+    
+    h6 { padding: $padding-sm 0; }
+
+    div { 
+        position: absolute; top: 60%; left: 50%; margin: 0 auto; 
+        -webkit-transform: translate(-50%, -50%);
+        -mos-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@import 'partials/portfolio';
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    section.landing {
+        .links { top: 50vh; }
+        .anchor { top: 60px; }
+    }
+
+    section.nutshell {
+        p { width: $width-wide; }
+    }    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    section.landing {
+        h1 { font-size: $font-size-xl; }
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    section.landing {
+        h1 { font-size: $font-size-md; }
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    section.landing { 
+        min-height: 100vh;
+        h1 { font-size: $font-size-md; top: 18%;}
+        > div { top: 23%; }
+        h3 { top: 28%; }
+        .links { top: 50% }
+        a:first-of-type { padding: 15px 30px; }
+        .anchor { top: 45px; display: inline; }
+
+        .triangle { 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid $color-medium;
+        }
+        .rot-triangle { 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid $color-medium;
+        }
+    }
+
+    section.contact { 
+        p { max-width: 95vw; } 
+        > a { font-size: 1.6em; }
+    }
+}
