@@ -4,21 +4,21 @@ section.landing {
     height: 100vh;
     max-height: 100vh;
     width: 100vw;
-    
-    background: url(/img/path.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+
+    background: url(img/path.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     text-align: center;
-    
+
     .bg {
-        position: absolute; 
+        position: absolute;
         margin: 0;
         padding: 0;
-        top: 0; 
-        left: 0; 
+        top: 0;
+        left: 0;
 
         /* Preserve aspet ratio */
         min-width: 100%;
@@ -29,23 +29,23 @@ section.landing {
     h1 {
         margin: 0;
         padding: 0;
-        
+
         color: $color-white;
-        
+
         font-family: 'Open Sans', sans-serif;
         font-size: $font-size-xxl;
         letter-spacing: $letter-spacing;
-        
+
         position: relative;
         top: 35vh;
     }
 
-    
+
     h3 {
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         letter-spacing: $letter-spacing;
-        
+
         color: $color-medium;
         position: relative;
         top: 45vh;
@@ -77,8 +77,8 @@ section.landing {
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     section.landing {
@@ -89,15 +89,15 @@ section.landing {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     section.landing {
         background: none;
         .small {
-            display: block; 
+            display: block;
             max-height: 480px;
          }
          .anchor { display: none; }
@@ -105,14 +105,14 @@ section.landing {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     section.landing {
         background: none;
-        .small { 
+        .small {
             display: block;
             max-height: 320px;
         }
@@ -123,8 +123,8 @@ section.landing {
 /* ----------- iPhone 5 and 5S ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 568px) {
     section.landing {
         max-height: 568px;
@@ -135,8 +135,8 @@ section.landing {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
@@ -149,8 +149,8 @@ section.landing {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
@@ -165,10 +165,10 @@ section.landing {
 /* ----------- iPhone 6 ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     section.landing {
         max-height: 667px;
         background: none;
@@ -178,11 +178,11 @@ section.landing {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
+  and (orientation: portrait) {
     section.landing {
         max-height: 667px;
         background: none;
@@ -191,11 +191,11 @@ section.landing {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
+  and (orientation: landscape) {
     section.landing {
         max-height: 667px;
         background: none;
@@ -207,10 +207,10 @@ section.landing {
 /* ----------- iPhone 6+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
     section.landing {
         max-height: 736px;
         background: none;
@@ -219,11 +219,11 @@ section.landing {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+  and (orientation: portrait) {
     section.landing {
         max-height: 736px;
         background: none;
@@ -232,11 +232,11 @@ section.landing {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+  and (orientation: landscape) {
     section.landing {
         max-height: 736px;
         background: none;
@@ -247,9 +247,9 @@ section.landing {
 /* ----------- iPad mini ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
         max-height: 1024px;
@@ -259,31 +259,31 @@ section.landing {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
         background: none;
-        .big { 
-            display: block; 
+        .big {
+            display: block;
             max-height: 1024px;
         }
     }
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
         max-height: 1024px;
         background: none;
-        .big { 
-            display: block; 
+        .big {
+            display: block;
             max-height: 768px;
         }
     }
@@ -291,9 +291,9 @@ section.landing {
 
 /* ----------- iPad 1 and 2 ----------- */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
         h1 { top: 18%;}
@@ -308,10 +308,10 @@ section.landing {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
         h1 { top: 18%;}
@@ -326,10 +326,10 @@ section.landing {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
         max-height: 1024px;
@@ -340,9 +340,9 @@ section.landing {
 
 /* ----------- iPad 3 and 4 ----------- */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {
     section.landing {
         max-height: 1024px;
@@ -352,10 +352,10 @@ section.landing {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
     section.landing {
         h1 { top: 18%;}
@@ -370,10 +370,10 @@ section.landing {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
     section.landing {
         max-height: 1024px;
