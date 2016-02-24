@@ -1178,7 +1178,7 @@ section.closing {
   position: relative;
   height: 200px;
   text-align: center;
-  background: url(/img/rocks-and-water.jpg) no-repeat top center/1200px 300px;
+  background: url(../../img/rocks-and-water.jpg) no-repeat top center/1200px 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

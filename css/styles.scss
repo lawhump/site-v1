@@ -10,36 +10,36 @@ section.nutshell {
     color: $color-stone;
     padding: 1.4*$padding-lg 0;
     line-height: $line-height;
-    
+
     h3 {
-        font-size: $font-size-lg;    
+        font-size: $font-size-lg;
     }
 
     h4 {
         font-size: $font-size-sm;
     }
-    
+
     p {
         margin: 0 auto;
         width: $width-wide;
         max-width: 800px;
-        font-size: $font-size-sm;    
+        font-size: $font-size-sm;
     }
-    
+
     .personality {
         margin-bottom: 40px;
     }
 
     div {
         margin: 0 auto;
-        width: 40%;    
+        width: 40%;
     }
 
     .platforms {
         @include cf();
         @include center(1000px);
         padding: 40px 0;
-        
+
         color: #111;
     }
 
@@ -78,7 +78,7 @@ div.work-prelude {
     text-align: center;
 
     font-size: $font-size-md;
-    
+
     h4 {
         font-family: 'Raleway', sans-serif;
         letter-spacing: $letter-spacing;
@@ -134,7 +134,7 @@ div.cta {
     background-color: $color-stone;
     text-align: center;
     font-size: $font-size-lg;
-    
+
     h3 {
         font-family: 'Open Sans', sans-serif;
         font-style: italic;
@@ -148,22 +148,22 @@ section.contact {
     height: auto;
     padding: $padding-xl 0;
     text-align: center;
-        
+
     .container {
         min-width: $width-std;
         width: 90%;
         margin: 0 auto;
         line-height: $line-height;
-        
+
         h3 {
             font-size: $font-size-lg;
         }
-        
+
         h4 {
-            font-size: 1.2*$font-size-sm;  
-            padding-bottom: 10px;  
+            font-size: 1.2*$font-size-sm;
+            padding-bottom: 10px;
         }
-        
+
         > div {
             padding: $padding-sm;
         }
@@ -196,21 +196,21 @@ section.closing {
     position: relative;
     height: 200px;
     text-align: center;
-    background: url(/img/rocks-and-water.jpg) no-repeat top center / 1200px 300px; 
+    background: url(../../img/rocks-and-water.jpg) no-repeat top center / 1200px 300px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;    
+    background-size: cover;
 
     h5, h6 {
         color: $color-white;
         font-weight: 300;
     }
-    
+
     h6 { padding: $padding-sm 0; }
 
-    div { 
-        position: absolute; top: 60%; left: 50%; margin: 0 auto; 
+    div {
+        position: absolute; top: 60%; left: 50%; margin: 0 auto;
         -webkit-transform: translate(-50%, -50%);
         -mos-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
@@ -230,27 +230,27 @@ section.closing {
 
     section.nutshell {
         p { width: $width-wide; }
-    }    
+    }
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     section.landing {
         h1 { font-size: $font-size-xl; }
     }
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
     section.landing {
         h1 { font-size: $font-size-md; }
     }
 }
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
-    section.landing { 
+    section.landing {
         min-height: 100vh;
         h1 { font-size: $font-size-md; top: 18%;}
         > div { top: 23%; }
@@ -259,20 +259,20 @@ and (max-device-width : 480px) {
         a:first-of-type { padding: 15px 30px; }
         .anchor { top: 45px; display: inline; }
 
-        .triangle { 
+        .triangle {
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             border-bottom: 10px solid $color-medium;
         }
-        .rot-triangle { 
+        .rot-triangle {
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             border-top: 10px solid $color-medium;
         }
     }
 
-    section.contact { 
-        p { max-width: 95vw; } 
+    section.contact {
+        p { max-width: 95vw; }
         > a { font-size: 1.6em; }
     }
 }
